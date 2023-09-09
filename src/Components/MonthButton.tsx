@@ -1,31 +1,31 @@
-import { CSSProperties } from 'react'
-import { useData } from '../Context/DataContext'
+import { CSSProperties } from "react"
+import { useData } from "../Context/DataContext"
 
 const buttonStyle: CSSProperties = {
-  padding: 'var(--gap) var(--gap-s)',
-  backgroundColor: 'var(--color-3)',
-  border: 'none',
-  borderRadius: 'var(--gap)',
-  color: 'fontVariant(--color-2)',
-  fontWeight: '600',
-  textTransform: 'capitalize',
+  padding: "var(--gap) var(--gap-s)",
+  backgroundColor: "var(--color-3)",
+  border: "none",
+  borderRadius: "var(--gap)",
+  color: "fontVariant(--color-2)",
+  fontWeight: "600",
+  textTransform: "capitalize",
 }
 
 function nameMonth(n: number) {
   const date = new Date()
   date.setMonth(date.getMonth() + n)
-  return new Intl.DateTimeFormat('pt-BR', {month: 'long'}).format(date) 
+  return new Intl.DateTimeFormat("pt-BR", { month: "long" }).format(date)
 }
 
 function formatDate(date: Date) {
-  const dd = String(date.getDate()).padStart(2, '0')
-  const mm = String(date.getMonth() + 1).padStart(2, '0')
+  const dd = String(date.getDate()).padStart(2, "0")
+  const mm = String(date.getMonth() + 1).padStart(2, "0")
   const yyyy = date.getFullYear()
   return `${yyyy}-${mm}-${dd}`
 }
 
-const MonthButton = ({n}: {n: number}) => {
-  const {setStart, setEnd} = useData()
+const MonthButton = ({ n }: { n: number }) => {
+  const { setStart, setEnd } = useData()
 
   function setMonth(n: number) {
     const date = new Date()
@@ -38,7 +38,9 @@ const MonthButton = ({n}: {n: number}) => {
   }
 
   return (
-    <button style={buttonStyle} onClick={() => setMonth(n)}>{nameMonth(n)}</button>
+    <button style={buttonStyle} onClick={() => setMonth(n)}>
+      {nameMonth(n)}
+    </button>
   )
 }
 
