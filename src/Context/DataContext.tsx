@@ -17,7 +17,7 @@ type IDataContext = {
   setEnd: Dispatch<React.SetStateAction<string>>
 }
 
-type IVenda = {
+export type IVenda = {
   id: string
   nome: string
   preco: number

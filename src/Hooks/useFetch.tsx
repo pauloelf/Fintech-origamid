@@ -13,7 +13,7 @@ function useFetch<T>(url: RequestInfo | URL, options?: RequestInit) {
     const {signal} = controller
 
     const fetchData = async () => {
-      setLoading(false)
+      setLoading(true)
       setData(null)
 
       try {

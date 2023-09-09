@@ -4,6 +4,8 @@ import Resumo from './Pages/Resumo'
 import Header from './Components/Header'
 import { DataContextProvider } from './Context/DataContext'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Vendas from './Pages/Vendas'
+import Venda from './Pages/Venda'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Header />
             <Routes>
               <Route path='/' element={<Resumo/>} />
+              <Route path='/vendas' element={<Vendas/>} />
+              <Route path='/vendas/:id' element={<Venda/>} />
             </Routes>
           </main>
         </div>  

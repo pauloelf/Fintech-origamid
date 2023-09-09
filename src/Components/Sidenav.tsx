@@ -1,29 +1,29 @@
-import React from 'react'
-import resumo from '../Assets/icons/resumo.svg'
-import configuracoes from '../Assets/icons/configuracoes.svg'
-import contato from '../Assets/icons/contato.svg'
-import sair from '../Assets/icons/sair.svg'
-import vendas from '../Assets/icons/vendas.svg'
-import webhooks from '../Assets/icons/webhooks.svg'
-import { NavLink } from 'react-router-dom'
-import FintechSVG from '../Assets/FintechSVG'
+import React from "react"
+import resumo from "../Assets/icons/resumo.svg"
+import configuracoes from "../Assets/icons/configuracoes.svg"
+import contato from "../Assets/icons/contato.svg"
+import sair from "../Assets/icons/sair.svg"
+import vendas from "../Assets/icons/vendas.svg"
+import webhooks from "../Assets/icons/webhooks.svg"
+import { NavLink } from "react-router-dom"
+import FintechSVG from "../Assets/FintechSVG"
 
 const Sidenav = () => {
   return (
-    <nav className='box bg-3 sidenav'>
-      <FintechSVG title='Fintech logo' />
+    <nav className="box bg-3 sidenav">
+      <FintechSVG title="Fintech logo" />
       <ul>
         <li>
           <span>
             <img src={resumo} alt="" />
           </span>
-          <NavLink to='/'>Resumo</NavLink>
+          <NavLink to="/">Resumo</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <NavLink to='/'>Vendas</NavLink>
+          <NavLink to="/vendas">Vendas</NavLink>
         </li>
         <li>
           <span>
