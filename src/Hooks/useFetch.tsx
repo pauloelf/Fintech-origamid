@@ -41,3 +41,5 @@ function useFetch<T>(url: RequestInfo | URL, options?: RequestInit) {
 
   return { data, loading, error }
 }
+
+export default useFetch
