@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 import Sidenav from './Components/Sidenav'
 import Resumo from './Pages/Resumo'
