@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   font-family: sans-serif;
   color: var(--color-2);
   background: var(--color-4);
@@ -192,16 +192,5 @@ ul {
   }
   .venda div:last-child {
     justify-self: start;
-  }
-  .recharts-legend-item,
-  g {
-    font-size: 1.25rem;
-  }
-}
-
-@media(max-width: 350px) {
-  .recharts-legend-item,
-  g {
-    font-size: 1rem;
   }
 }
