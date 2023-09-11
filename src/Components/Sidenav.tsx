@@ -16,13 +16,13 @@ const Sidenav = () => {
           <span>
             <img src={resumo} alt="" />
           </span>
-          <NavLink to="/">Resumo</NavLink>
+          <NavLink to="/Fintech-origamid">Resumo</NavLink>
         </li>
         <li>
           <span>
             <img src={vendas} alt="" />
           </span>
-          <NavLink to="/vendas">Vendas</NavLink>
+          <NavLink to="/Fintech-origamid/vendas">Vendas</NavLink>
         </li>
         <li>
           <span>

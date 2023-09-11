@@ -16,9 +16,9 @@ function App() {
           <main>
             <Header />
             <Routes>
-              <Route path='/' element={<Resumo/>} />
-              <Route path='/vendas' element={<Vendas/>} />
-              <Route path='/vendas/:id' element={<Venda/>} />
+              <Route path='/Fintech-origamid' element={<Resumo/>} />
+              <Route path='/Fintech-origamid/vendas' element={<Vendas/>} />
+              <Route path='/Fintech-origamid/vendas/:id' element={<Venda/>} />
             </Routes>
           </main>
         </div>  

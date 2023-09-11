@@ -8,10 +8,10 @@ const Header = () => {
   const location = useLocation()
 
   useEffect(() => {
-    if (location.pathname === "/") {
+    if (location.pathname === "/Fintech-origamid") {
       setTitle("Resumo")
       document.title = "Fintech | Resumo"
-    } else if (location.pathname === "/vendas") {
+    } else if (location.pathname === "/Fintech-origamid/vendas") {
       setTitle("Vendas")
       document.title = "Fintech | Vendas"
     }

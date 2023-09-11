@@ -4,7 +4,7 @@ import { IVenda } from "../Context/DataContext"
 const VendaItem = ({ venda }: { venda: IVenda }) => {
   return (
     <div className="box venda">
-      <NavLink to={`/vendas/${venda.id}`} style={{ fontFamily: "monospace" }}>
+      <NavLink to={`/Fintech-origamid/vendas/${venda.id}`} style={{ fontFamily: "monospace" }}>
         {venda.id}
       </NavLink>
       <div>{venda.nome}</div>
