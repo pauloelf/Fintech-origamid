@@ -1,4 +1,3 @@
-import React from "react"
 import resumo from "../Assets/icons/resumo.svg"
 import configuracoes from "../Assets/icons/configuracoes.svg"
 import contato from "../Assets/icons/contato.svg"
