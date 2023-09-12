@@ -25,8 +25,12 @@
 ```bash
   # Instale as dependências
   $ npm install
+  ---/ ou /---
+  $ pnpm install
 ```
 ```bash
   # Inicie o projeto
   $ npm run dev
+  ---/ ou /---
+  $ pnpm run dev
 ```
